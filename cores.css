@@ -1,0 +1,46 @@
+*{
+    margin:0% auto ;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#menu {
+    list-style-type: none;
+    padding: 0%;
+    background-color: rgb(199, 44, 165);
+
+}
+#menu li  {
+    display: inline;
+}
+
+#menu li a {
+    color: aliceblue;
+    padding: 20px;
+    display: inline-block;
+    text-decoration:none;
+    transform: background .3s;
+}
+#menu li a:hover{
+    background-color: rgb(193, 206, 17);
+}
+#menu li:last-child a {
+    float: right;
+    text-decoration:none ;
+    transform: background .3s;
+}
+.zap {
+    position: fixed;
+    bottom:0px;
+    z-index: 9999;
+    right:0,;
+}
+.logo{
+    left :10px;
+    position: absolute;
+    display: block;
+    margin: auto;
+    padding: 15px;
+    position: absolute;
+    padding: 10px;
+}

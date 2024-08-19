@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="cores.css">
 </head>
 <body>
+  
+    
   <ul id="menu">
     <ul>
         <li><a href="https://www.google.com.br/">Home</a></li>
@@ -20,7 +22,29 @@
       <img src="what.jpeg" width="30%" alt="Fale Conosco no whatsapp" title="Fale Conosco no whatsapp"  />
     </a>
       </div>
+          
+    
+      <form action="/buscar" method="GET" class="search-container">
+        <input type="text" placeholder="Pesquisar..." class="search-input" name="query">
+        <button type="submit" class="search-button">Buscar</button>
+    </form>
+    <script>
+      document.getElementById('search-input').addEventListener('keydown', function(event) {
+          if (event.key === 'Enter') {
+              event.preventDefault(); // Evita o comportamento padrão do Enter
       
+              // Obtém o valor digitado no campo de pesquisa
+              var query = this.value.trim();
+      
+              if (query) {
+                  // Redireciona para a página de resultados com a query
+                  window.location.href = '/buscar?query=' + encodeURIComponent(query);
+              }
+          }
+      });
+      </script>
+      
+    
       <div class="logo">
         <img src="karol.png" right="50%"
       </div>

@@ -1,3 +1,5 @@
+
+
 *{
     margin:0% auto ;
     padding: 0%;
@@ -44,3 +46,33 @@
     position: absolute;
     padding: 10px;
 }
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    width: 1000px;
+    border: 1px solid #ccc;
+    border-radius: 10px 0 0 10px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #007bff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+

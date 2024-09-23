@@ -4,52 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="cores.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   
-    
   <ul id="menu">
-    <ul>
-        <li><a href="https://www.google.com.br/">Home</a></li>
-        <li><a href="https://api.whatsapp.com/send/?phone=5582999317398&text&type=phone_number&app_absent=0">Contato</a></li>
-        <li><a href="QuemSomos.html">Quem Somos </a></li>
-        <li><a href="https://www.google.com.br/maps/place/R.+Nossa+Sra.+Aparecida,+160+-+Santa+L%C3%BAcia,+Macei%C3%B3+-+AL,+57081-480/@-9.574644,-35.7514623,17z/data=!3m1!4b1!4m5!3m4!1s0x701487a7e9d4689:0x9de83a367cf624bb!8m2!3d-9.5746493!4d-35.7488874?entry=ttu">Localização</a></li>
-        <li><a href="login.html">Login</a></li>
-      </ul>
-      <div class="zap">
-        <a href="https://wa.me/558299317398" target="_blank">
-      <img src="what.jpeg" width="30%" alt="Fale Conosco no whatsapp" title="Fale Conosco no whatsapp"  />
-    </a>
+      <li><a href="#">Fotos</a></li>
+      <li><a href="https://api.whatsapp.com/send/?phone=5582999317398&text&type=phone_number&app_absent=0">Contato</a></li>
+      <li><a href="https://www.google.com.br/maps/place/R.+Nossa+Sra.+Aparecida,+160+-+Santa+L%C3%BAcia,+Macei%C3%B3+-+AL,+57081-480/@-9.574644,-35.7514623,17z/data=!3m1!4b1!4m5!3m4!1s0x701487a7e9d4689:0x9de83a367cf624bb!8m2!3d-9.5746493!4d-35.7488874?entry=ttu">Localização</a></li>
+      <li><a href="login.html">Login</a></li>
+  </ul>    
+
+  <div class="zap">
+      <a href="https://wa.me/558299317398" id="app" target="_blank">
+          <img src="whatsapp-icon-logo-svgrepo-com.svg" alt="whatsapp" height="60rem">
+      </a>
+  </div>
+
+  <!-- Painel de navegação -->
+  <form action="/buscar" method="GET" class="search-container">
+      <input type="text" id="search-input" placeholder="Pesquisar..." class="search-input" name="query">
+      <div class="lupinha" id="lupa">
+          <img src="lupa.svg" alt="lupa" height="28rem"> 
       </div>
-          
-    
-      <form action="/buscar" method="GET" class="search-container">
-        <input type="text" placeholder="Pesquisar..." class="search-input" name="query">
-        <button type="submit" class="search-button">Buscar</button>
-    </form>
-    <script>
+  </form>
+  
+  <script>
       document.getElementById('search-input').addEventListener('keydown', function(event) {
           if (event.key === 'Enter') {
               event.preventDefault(); // Evita o comportamento padrão do Enter
-      
-              // Obtém o valor digitado no campo de pesquisa
               var query = this.value.trim();
-      
               if (query) {
-                  // Redireciona para a página de resultados com a query
                   window.location.href = '/buscar?query=' + encodeURIComponent(query);
               }
           }
       });
-      </script>
-      
-    
-      <div class="logo">
-        <img src="karol.png" right="50%"
-      </div>
 
-      <p>123</p>
+      document.getElementById('lupa').addEventListener('click', function() {
+          var query = document.getElementById('search-input').value.trim();
+          if (query) {
+              window.location.href = '/buscar?query=' + encodeURIComponent(query);
+          }
+      });
+  </script>
+
+  <br>
+  <div class="legenda">
+      <center><h1>Destaques</h1></center>
+  </div>
+  <br>
+
+  <!-- Cards de produtos -->
+  <div class="main">
+      <div class="card card1">
+          <img src="baby1.jpg" alt="imagem1">
+          <p class="card-text">Essa é a frase 1</p>
+          <span>Era <s>70</s> Saindo agora por 60</span>
+          <button class="informação">Mais informações</button>
+      </div>
+      <br>
+
+      <div class="card card2">
+          <img src="baby2.jpg" alt="imagem2">
+          <p class="card-text">Essa é a frase 2</p>
+          <span>Valor</span>
+          <button class="informação2">Mais informações</button>
+      </div>
+      <br>
+
+      <div class="card card3">
+          <img src="baby3.jpg" alt="imagem3">
+          <p class="card-text">Essa é a frase 3</p>
+          <span>Valor</span>
+          <button class="informação3">Mais informações</button>
+      </div>
+      <br>
+  </div>
+
+  <center>
+      <div class="main2">
+          <div class="carta carta1">
+              <img src="baby4.jpg" alt="baby4">
+              <p class="texto-card">Essa é a frase 4</p>
+              <span>Valor</span>
+              <button class="informação4">Mais informações</button>
+          </div>
+          <br>
+
+          <div class="carta carta2">
+              <img src="baby5.jpg" alt="baby5">
+              <p class="texto-card">Essa é a frase 5</p>
+              <span>Valor</span>
+              <button class="informação5">Mais informações</button>
+          </div>
+          <br>
+
+          <div class="carta carta3">
+              <img src="baby6.jpg" alt="baby6">
+              <p class="texto-card">Essa é a frase 6</p>
+              <span>Valor</span>
+              <button class="informação6">Mais informações</button>
+          </div>
+      </div>
+  </center>
+
+  <div class="space"></div>
+  
+  <footer>
+      <div id="footer_content">
+          <div id="footer_contact">
+              <center><img src="donaAgusta.png" alt="logomarca"></center>
+              <p>Página web</p>
+
+              <div id="footer_social">
+                  <a href="https://instagram.com" class="footer_link" id="instagram" target="_blank" aria-label="Instagram">
+                      <i class="fa-brands fa-square-instagram"></i>
+                  </a>
+                  <a href="https://facebook.com" class="footer_link" id="facebook" target="_blank" aria-label="Facebook">
+                      <i class="fa-brands fa-square-facebook"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </footer>
+
 </body>
 </html>
-  

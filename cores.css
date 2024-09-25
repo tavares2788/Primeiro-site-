@@ -49,37 +49,34 @@
     position: absolute;
     padding: 10px;
 }
+/* Centralizar o formulário de busca na tela */
 .search-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    width: 100%; /* Garante que o formulário ocupe 100% da largura */
 }
 
+/* Estilo do campo de pesquisa */
 .search-input {
-    right: 10rem;
     padding: 1rem;
-    width: 40rem;
+    width: 40rem; /* Tamanho do input */
     border-radius: 1rem;
     font-size: 1rem;
     outline: none;
     border: none;
+    background-color: antiquewhite;
 }
-
-.search-button {
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    border: 2px solid #007bff;
-    border-radius: 0 5px 5px 0;
+.lupinha {
+    position: absolute;
+    right: 5.1rem; /* Posiciona a lupa à direita dentro do input */
+    top: 7rem;
+    transform: translateY(-50%);
     cursor: pointer;
-    font-size: 16px;
+    
 }
 
-.search-button:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-}
 footer{
     width: 100%;
     color:rgb(0, 0, 0)
@@ -94,5 +91,27 @@ footer{
     height: 11rem;
     width: 11rem;
     cursor: pointer;
+}
+#footer_social{
+
+    display: flex;
+    gap: 2rem;
+    margin:1.5rem ;
+   
+}
+#footer_social .footer_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color:white;
+    border-radius: 50%;
+}
+#instagram{
+    background:linear-gradient(#7f37c9,#ff2992 , #ff9807); 
+}
+#facebook{
+    background: #007bff;
 }
 

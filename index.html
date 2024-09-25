@@ -24,7 +24,7 @@
           <img src="whatssap.svg" alt="whatsapp" height="60rem">
       </a>
   </div>
-
+  <center>
   <!-- Painel de navegação -->
   <form action="/buscar" method="GET" class="search-container">
       <input type="text" id="search-input" placeholder="Pesquisar..." class="search-input" name="query">
@@ -43,6 +43,7 @@
               }
           }
       });
+      
 
       document.getElementById('lupa').addEventListener('click', function() {
           var query = document.getElementById('search-input').value.trim();
@@ -51,7 +52,7 @@
           }
       });
   </script>
-
+  </center>
   <br>
   <div class="legenda">
       <center><h1>Destaques</h1></center>

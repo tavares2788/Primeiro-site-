@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+body{
+    background-color: rgb(255, 0, 0);
+}
 
 *{
     margin:0% auto ;
     padding: 0%;
     box-sizing: border-box;
-    font-family:'inter',sans-serif
+    font-family:'inter',sans-serif;
     
 }
 
@@ -55,25 +57,29 @@
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    width: 100%; /* Garante que o formulário ocupe 100% da largura */
+    width: 100%; /* O container ocupa 100% da largura disponível */
 }
 
 /* Estilo do campo de pesquisa */
 .search-input {
     padding: 1rem;
-    width: 40rem; /* Tamanho do input */
+    width: 100%; /* O input ocupa todo o espaço do container */
+    max-width: 40rem; /* Limita o tamanho máximo do input */
     border-radius: 1rem;
     font-size: 1rem;
     outline: none;
     border: none;
     background-color: antiquewhite;
+    height: 3rem;
 }
+
 .lupinha {
     position: absolute;
-    right: 5.1rem; /* Posiciona a lupa à direita dentro do input */
-    top: 7rem;
+    right:22.5rem; /* Posiciona a lupa à direita dentro do input */
+    top: 6.9rem;
     transform: translateY(-50%);
     cursor: pointer;
+    font-size: 2rem;
     
 }
 
@@ -113,5 +119,10 @@ footer{
 }
 #facebook{
     background: #007bff;
+}
+.legenda{
+    padding:2rem;
+    font-size: 3rem;
+    color:#ff9807
 }
 

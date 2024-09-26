@@ -125,4 +125,34 @@ footer{
     font-size: 3rem;
     color:#ff9807
 }
-
+.main{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    margin:0.75rem;
+    color:rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    width: 15rem;
+    height: 15rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.card>img{
+    width: 20rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 2rem;
+}
+.main2{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    margin:0.75rem;
+    color:rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    width: 20rem;
+    height: 15rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}

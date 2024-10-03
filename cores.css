@@ -3,7 +3,7 @@
 body ,  html {
     height: 100%;
     margin: 0;
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(255, 0, 0);
 }
 
     
@@ -94,14 +94,13 @@ footer{
     color:rgb(255, 255, 255)
 }
 #footer_content{
-    background-color: rgb(199, 169, 169);
+    background-color: rgb(255, 255, 255);
     display: grid;
     padding: 2rem 3.5rem;
 }
 #footer_contact img {
-    border-radius: 20rem;
-    height: 11rem;
-    width: 11rem;
+    height: 20rem;
+    width: 16rem;
     cursor: pointer;
 }
 #footer_social{

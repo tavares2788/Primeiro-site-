@@ -130,24 +130,60 @@ footer{
     font-size: 3rem;
     color:#ff9807
 }
-.main{
+.main {
     display: flex;
     justify-content: center;
-    flex-grow: 1;
+    flex-wrap: wrap; /* Permite que os cards quebrem linha */
+    gap: 2rem;
     margin-bottom: 20rem;
-}
-.card{
-    margin:0.75rem;
-    color:rgb(0, 0, 0);
-    background-color: rgb(0, 0, 0);
-    width: 15rem;
-    height: 15rem;
-    border-radius: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    
 
 }
-.card>img{
-    width:100%;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 2rem;
+.card {
+    margin: 0.75rem;
+    background-color: rgb(0, 0, 0);
+    width: 15rem;
+    height: auto;
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona uma transição suave */
 }
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta o card em 5% */
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 25px 75px 6px; /* Intensifica a sombra no hover */
+}
+
+.card img {
+    width: 100%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    object-fit: cover;
+}
+
+.card .card-text, .card span {
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.card button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: auto;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Suaviza a mudança de cor do botão */
+}
+
+.card button:hover {
+    background-color: #6d6d6d;
+}
+
+

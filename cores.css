@@ -135,7 +135,7 @@ footer{
     justify-content: center;
     flex-wrap: wrap; /* Permite que os cards quebrem linha */
     gap: 2rem;
-    margin-bottom: 20rem;
+    margin-bottom:5rem;
     
 
 }

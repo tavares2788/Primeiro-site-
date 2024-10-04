@@ -23,6 +23,11 @@ body ,  html {
     background-color: rgb(199, 44, 165);
 
 }
+#menu i {
+    font-size: 1.2rem;
+}
+
+
 #menu li  {
     display: inline;
 }
@@ -186,22 +191,28 @@ footer{
 .card button:hover {
     background-color: #6d6d6d;
 }
-
-.pagamento{
+ 
+.pagamento {
     padding: 0.75rem;
     background-color: #007bff;
     display: flex;
+    justify-content: space-between; /* Espaça os itens ao longo do container */
+    align-items: center; /* Centraliza verticalmente */
     font-size: 3rem;
-    left: 5rem;
+    cursor: pointer;
+    font-size: 3rem;
 }
-    
 
-.pagamento img {
-    display: flex;
-    top: 50%;
-    left: 30%;
-    transform: translate(50% - 50%);
-    height:3.5rem;
-    text-align: center;
+.pagamento p {
+    font-size: 2.2rem ;
+
 }
+
+
+
+
+
+
+
+
 

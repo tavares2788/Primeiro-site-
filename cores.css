@@ -96,7 +96,8 @@ body ,  html {
 
 footer{
     width: 100%;
-    color:rgb(255, 255, 255)
+    color:rgb(255, 255, 255);
+    
 }
 #footer_content{
     background-color: rgb(255, 255, 255);
@@ -134,7 +135,7 @@ footer{
 .legenda{
     padding:2rem;
     font-size: 3rem;
-    color:#ff9807
+    color:#000000
 }
 .main {
     display: flex;
@@ -193,9 +194,10 @@ footer{
 }
  
 .pagamento {
-    padding: 0.75rem;
+    padding: 1rem;
     background-color: #007bff;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between; /* Espaça os itens ao longo do container */
     align-items: center; /* Centraliza verticalmente */
     font-size: 3rem;
@@ -203,10 +205,21 @@ footer{
     font-size: 3rem;
 }
 
-.pagamento p {
-    font-size: 2.2rem ;
-
+.pagamento img {
+    width: auto ;
+    height: 6rem;
 }
+.pagamento i {
+    font-size: 4rem;
+     
+}
+.pagamento p {
+    font-size: 2rem;
+}
+
+
+
+
 
 
 

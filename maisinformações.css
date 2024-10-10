@@ -1,0 +1,44 @@
+
+*{
+    margin:0%  ;
+    padding: 0%;
+}
+body{
+    background-color: palevioletred;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.tabela{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.th ,td {
+    border: 0.12rem solid black;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    outline: none;
+    width: 12rem;
+    cursor: text;
+    background-color: aliceblue;
+    color:black;
+    border-radius: 1rem;
+    margin: 2rem;
+}
+.table , thead{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(0, 0, 0);
+ 
+}
+.imagens{
+    padding: 0.5em;;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 25px 75px 6px;
+    
+}
+.imagens , img {
+    height: 30rem;
+    float: right;
+    top: 20rem;
+    border-radius: 2rem;
+   
+}

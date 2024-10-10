@@ -3,7 +3,7 @@
 body ,  html {
     height: 100%;
     margin: 0;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 
     
@@ -96,24 +96,25 @@ body ,  html {
 
 footer{
     width: 100%;
-    color:rgb(255, 255, 255);
+    
     
 }
 #footer_content{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(85, 70, 70);
     display: grid;
+    grid-template-columns: repeat(4,1fr);
     padding: 0.5rem 3.5rem;
 }
 #footer_contact img {
-    height: 20rem;
-    width: 20rem;
+    height: 10rem;
+    width: 10rem;
     cursor: pointer;
-    border-radius: 2rem;
+    border-radius: 20rem;
 }
 #footer_social{
 
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
     margin:0,5rem ;
    
 }
@@ -170,6 +171,7 @@ footer{
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
     object-fit: cover;
+    
 }
 
 .card .card-text, .card span {

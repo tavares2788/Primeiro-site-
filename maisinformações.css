@@ -30,15 +30,16 @@ body{
  
 }
 .imagens{
-    padding: 0.5em;;
+    padding: auto;;
     margin: auto;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 25px 75px 6px;
     
 }
 .imagens , img {
-    height: 30rem;
+    height: 25rem;
     float: right;
     top: 20rem;
     border-radius: 2rem;
+
    
 }

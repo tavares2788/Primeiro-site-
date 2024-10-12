@@ -9,6 +9,7 @@ body{
 }
 .tabela{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 .th ,td {
     border: 0.12rem solid black;
@@ -30,16 +31,23 @@ body{
  
 }
 .imagens{
-    padding: auto;;
+    padding: auto;
     margin: auto;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 25px 75px 6px;
     
 }
-.imagens , img {
-    height: 25rem;
+.imagens img {
+    display: flex;
+    height: 32rem;
     float: right;
-    top: 20rem;
-    border-radius: 2rem;
-
-   
+    top: 10rem;
+    left: 10rem;
+    border-radius: 2.5rem;
+    margin-right: 10rem; /* Ajuste a margem direita */
+    margin-top: 2rem;   /* Ajuste a margem superior */
+    margin-bottom: 2rem; /* Ajuste a margem inferior */
+    margin-left: 2rem;  /* Ajuste a margem esquerda, se necessário */
+}
+h1{
+    text-align: center;
 }

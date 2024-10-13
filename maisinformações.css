@@ -4,11 +4,14 @@
     padding: 0%;
 }
 body{
-    background-color:rgba(142, 0, 199, 0.35);
+    background-color:darkorchid;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 #menu {
-    background-color: pink;
+    background-color: rgb(255, 25, 205);
+}
+#menu i{
+   font-size: 1.25rem;
 }
 
 #menu li  {
@@ -64,12 +67,12 @@ body{
 
 .imagens img {
     display: flex;
-    height: 32rem;
+    height: 31rem;
     float: right;
     top: 10rem;
     left: 10rem;
     border-radius: 2.5rem;
-    margin-right: 10rem; /* Ajuste a margem direita */
+    margin-right: 7rem; /* Ajuste a margem direita */
     margin-top: 2rem;   /* Ajuste a margem superior */
     margin-bottom: 2rem; /* Ajuste a margem inferior */
     margin-left: 2rem;  /* Ajuste a margem esquerda, se necessário */
@@ -83,6 +86,17 @@ body{
 
 .imagens img:active {
     transform: translate(1rem, 1rem); /* Mover a imagem quando clicada */
+}
+ 
+@media (max-width: 768px) {
+    .imagens img {
+        width: 20rem; /* A largura ocupará 100% da tela no celular */
+        max-width: none; /* Remove a limitação de largura máxima em telas pequenas */
+        margin-right:2.25rem; /* Remove margens para ajustar o layout */
+        margin-left: 0;  /* Remove margens para ajustar o layout */
+        height: auto; /* Garante que a altura se ajuste proporcionalmente */
+        border-radius: 1rem;
+    }
 }
 
 

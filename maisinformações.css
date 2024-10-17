@@ -37,21 +37,22 @@ body{
 
 .tabela{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      
+    
 }
 .th ,td {
-    height: 1.5rem;
+    height: 2rem;
     border: 0.12rem solid black;
     padding: 1rem;
     text-align: center;
     font-size: 1rem;
     outline: none;
-    width: 15rem;
+    width: 27rem;
     cursor: text;
     background-color: aliceblue;
     color:black;
     border-radius: 1rem;
     margin: 2rem;
+    
 }
 .table , thead{
     font-size: 1.8rem;
@@ -65,6 +66,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.56) 0px 25px 75px 6px;
     align-items: center;
     justify-content: center;
+    width: 20rem;
 }
 
 .imagens img {
@@ -74,10 +76,10 @@ body{
     top: 10rem;
     left: 10rem;
     border-radius: 2.5rem;
-    margin-right: 7rem; /* Ajuste a margem direita */
+    margin-right: 0,15rem; 
     margin-top: 2rem;   /* Ajuste a margem superior */
-    margin-bottom: 2rem; /* Ajuste a margem inferior */
-    margin-left: 2rem;  /* Ajuste a margem esquerda, se necessário */
+    margin-bottom: 1rem; /* Ajuste a margem inferior */
+    margin-left: 50rem;  /* Ajuste a margem esquerda, se necessário */
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.7s ease; /* Adiciona uma transição suave */
 }
@@ -131,23 +133,54 @@ button:hover{
     
     }
 }
+@media (max-width :768px){
+    .imagens img {
+        height: 80%;
+        margin-right: 7px;
+    }
+}
+
 button{
     padding: 0.25;
     margin-top:4px;
 }
-@media (min-width: 820px) and (max-width: 1180px) {
+@media (min-width: 820px){
+    .imagens img {
+        height:100rem;
+        display: flex;
+        margin-right: 10rem;
+        max-height: 1rem;
+}
+    }
+
+@media (max-width: 1180px){
     .imagens img {
         display: flex;
-        top: 20%;
-        left: 30%;
+         height:auto ;
+         width: 25rem;
+         margin-right:5px ;
+         
     }
+}
+
+@media(max-width:1180px){
+    h3{
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
         
-  }
+  
   h2 {
-    color: white; /* Para que apareça sobre o fundo escuro */
-    text-align: center; /* Centraliza o texto */
-    margin: 2rem 0; /* Adiciona espaçamento acima e abaixo */
-    font-size: 2rem; /* Ajuste o tamanho conforme necessário */
+    color: white; 
+    text-align: center; 
+    margin: 2rem 0; 
+    font-size: 2rem; 
+}
+.descrição{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
   

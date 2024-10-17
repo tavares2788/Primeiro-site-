@@ -33,27 +33,9 @@
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
   </form>
-  
-  <script>
-      document.getElementById('search-input').addEventListener('keydown', function(event) {
-          if (event.key === 'Enter') {
-              event.preventDefault(); // Evita o comportamento padrão do Enter
-              var query = this.value.trim();
-              if (query) {
-                  window.location.href = '/buscar?query=' + encodeURIComponent(query);
-              }
-          }
-      });
-      
-
-      document.getElementById('lupa').addEventListener('click', function() {
-          var query = document.getElementById('search-input').value.trim();
-          if (query) {
-              window.location.href = '/buscar?query=' + encodeURIComponent(query);
-          }
-      });
-  </script>
   </center>
+
+  
   <br>
   <div class="legenda">
       <center><h1>Destaques</h1></center>
@@ -125,7 +107,6 @@
           </div>
       </div>
   </footer>
- 
-
+  <script src="index.js"></script>
 </body>
 </html>

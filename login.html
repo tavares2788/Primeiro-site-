@@ -11,14 +11,63 @@
     <div>
         <h1><i>Login</i></h1>
         <form id="loginForm" action="recebendo_dados.php" method="post">
+<<<<<<< HEAD
             <input type="text" id="username" name="username" placeholder="nome" maxlength="12" required><br><br>
             <input type="password" id="password" name="password" minlength="6" maxlength="15" placeholder="senha" required><br><br>
+=======
+            <input type="text" id="username" name="username" placeholder="nome" maxlength="12"><br><br>
+            <input type="password" id="password" name="password" placeholder="senha"><br><br>
+>>>>>>> 7b96fd245582946cfec08c7c790c75dbfabea23d
             <button type="submit">Entrar</button>
         </form>
         <br>
         <button type="button" onclick="window.location.href='cadastro.html'">Cadastro</button>
+<<<<<<< HEAD
         
         
+=======
+        <p id="message"></p>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Obtendo os valores dos campos
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            var messageElement = document.getElementById('message');
+
+            // Verificação básica
+            if (username === '') {
+                messageElement.textContent = 'Por favor, insira o nome de usuário.';
+                return;
+            }
+
+            if (username.length > 12) {
+                messageElement.textContent = 'O nome de usuário deve ter no máximo 12 caracteres.';
+                return;
+            }
+             
+
+            if (password === '') {
+                messageElement.textContent = 'Por favor, insira a senha.';
+                return;
+            }
+
+            // Verificação adicional (exemplo: comprimento mínimo da senha)
+            if (password.length < 6) {
+                messageElement.textContent = 'A senha deve ter pelo menos 6 caracteres.';
+                return;
+            }
+
+            // Se todas as validações passarem
+            messageElement.textContent = 'Login bem-sucedido!';
+            // Aqui você pode adicionar o código para enviar os dados ao servidor ou redirecionar o usuário
+        });
+    </script>
+
+>>>>>>> 7b96fd245582946cfec08c7c790c75dbfabea23d
   
 </body>
 </html>

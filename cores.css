@@ -17,36 +17,6 @@ body ,  html {
     
 }
 
-#menu {
-    list-style-type: none;
-    padding: 0%;
-    background-color: rgb(199, 44, 165);
-
-}
-#menu i {
-    font-size: 1.2rem;
-}
-
-
-#menu li  {
-    display: inline;
-}
-
-#menu li a {
-    color: aliceblue;
-    padding: 20px;
-    display: inline-block;
-    text-decoration:none;
-    transform: background .3s;
-}
-#menu li a:hover{
-    background-color: rgb(193, 206, 17);
-}
-#menu li:last-child a {
-    float: right;
-    text-decoration:none ;
-    transform: background .3s;
-}
 .zap {
     position: fixed;
     bottom:0px;
@@ -133,67 +103,6 @@ footer{
 #facebook{
     background: #007bff;
 }
-.legenda{
-    padding:2rem;
-    font-size: 3rem;
-    color:#000000
-}
-.main {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Permite que os cards quebrem linha */
-    gap: 1rem;
-    margin-bottom:5rem;
-    
-
-}
-.card {
-    margin: 0.75rem;
-    background-color: rgb(0, 0, 0);
-    width: 15rem;
-    height: auto;
-    border-radius: 1.5rem;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona uma transição suave */
-}
-
-.card:hover {
-    transform: scale(1.05); /* Aumenta o card em 5% */
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 25px 75px 6px; /* Intensifica a sombra no hover */
-}
-
-.card img {
-    width: 100%;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    object-fit: cover;
-    
-}
-
-.card .card-text, .card span {
-    margin: 0.5rem 0;
-    text-align: center;
-}
-
-.card button {
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    margin-top: auto;
-    text-align: center;
-    transition: background-color 0.5s ease; /* Suaviza a mudança de cor do botão */
-}
-
-.card button:hover {
-    background-color: #6d6d6d;
-}
  
 .pagamento {
     padding: 1rem;
@@ -211,20 +120,82 @@ footer{
     width: auto ;
     height: 6rem;
 }
+@media (max-width : 768px){
+    .pagamento img {
+       width: 3.5rem;
+   }
+}
 .pagamento i {
-    font-size: 4rem;
-     
+    font-size: 4rem; 
+}
+
+@media (max-width : 768px){
+    .pagamento i {
+       font-size: 2rem;
+   }
 }
 .pagamento p {
     font-size: 2rem;
 }
-
-
-
-
-
-
-
+ @media (max-width : 768px){
+     .pagamento p {
+        font-size: 1rem;
+    }
+ }
+/* Estilização geral do carousel */
+#carouselExampleSlidesOnly {
+    width: 50%; /* Define a largura do carousel */
+    height: auto;
+    margin: 20px auto; /* Centraliza o carousel e adiciona uma margem */
+    border-radius: 10px; /* Adiciona cantos arredondados ao carousel */
+    overflow: hidden; /* Esconde as partes que excedem os limites do container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para um efeito visual */
+  }
+  
+  /* Estilo das imagens dentro do carousel */
+  .carousel-inner img {
+    width: 100%; /* Garante que as imagens ocupem toda a largura do carousel */
+    height:30rem; /* Mantém a proporção das imagens */
+    object-fit: cover; /* As imagens cobrem o container sem distorção */
+  }
+  
+  /* Adiciona uma transição suave ao passar as imagens */
+  .carousel-inner .carousel-item {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Estilo específico para dispositivos móveis */
+  @media (max-width: 768px) {
+    #carouselExampleSlidesOnly {
+      width: 95%; /* Aumenta a largura em dispositivos móveis */
+    }
+  }
+  
+  /* Estilo dos botões de navegação (opcional se quiser customizar) */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(100%); /* Inverte as cores para ficar branco */
+  }
+  
+  /* Pode adicionar um background ao carousel */
+  #carouselExampleSlidesOnly {
+    background-color: #f8f9fa; /* Cor de fundo leve */
+    box-shadow: grey;
+  }
+  .navbar-brand img{
+    border-radius: 5px;
+  }
+  .card-group{
+    width: 80%;
+    height: auto;
+    gap: 50px;
+  }
+  .card img{
+    border-radius: 0.25rem;
+    
+   
+  }
+  
 
 
 
